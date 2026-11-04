@@ -1,10 +1,14 @@
-# FitCoach
+<p align="center">
+  <img src="frontend/public/logo.png" alt="Logo de Velytra" width="96" />
+</p>
+
+# Velytra
 
 App web para entrenadores personales: clientes y grupos, rutinas individuales y grupales con bloques, seguimiento de progreso con gráficos, calendario de citas, mensajes y control de pagos con alertas de vencimiento.
 
 ## Demo online
 
-- App: https://fitcoach-peach-eta.vercel.app
+- App: https://Velytra-peach-eta.vercel.app
 
 Cuentas de prueba (datos de ejemplo, todas con la contraseña `demo1234`):
 
@@ -13,9 +17,14 @@ Cuentas de prueba (datos de ejemplo, todas con la contraseña `demo1234`):
 | Entrenador | entrenador@demo.com |
 | Cliente | laura@demo.com |
 
+En la pantalla de ingreso hay dos botones para entrar a la demo con un solo toque.
+
 La demo es pública y cualquiera puede modificar sus datos. La API corre en el plan gratis de Render, que se duerme tras 15 minutos sin uso: la primera carga puede tardar cerca de un minuto.
 
 ## Capturas
+
+### Ingreso
+![Pantalla de ingreso](docs/login.png)
 
 ### Panel del entrenador
 ![Panel de inicio](docs/panel-inicio.png)
@@ -83,8 +92,8 @@ Requisitos: Node 20 o superior, PostgreSQL y (opcional, para subir fotos y video
 1. Crear la base y las tablas:
 
 ```
-createdb fitcoach
-psql -d fitcoach -f backend/db/schema.sql
+createdb Velytra
+psql -d Velytra -f backend/db/schema.sql
 ```
 
 2. Backend:
